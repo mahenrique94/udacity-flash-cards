@@ -2,6 +2,8 @@ import React from 'react'
 
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 
+import { clearNotifications } from '../../utils/notifications'
+
 import i18n from '../../_translate/i18n'
 
 import { colors } from '../../helpers/colors'
@@ -108,6 +110,7 @@ class Quiz extends React.Component {
 
     backToDeck = () => {
         const { navigation } = this.props
+        clearNotifications()
         navigation.goBack()
     }
 

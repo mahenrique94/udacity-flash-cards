@@ -31,9 +31,11 @@ const messages = {
                         saved: 'Question saved with success'
                     }
                 },
+                body: 'You must complete at least one quiz by day',
                 nameExists: 'Deck name already used',
                 nameRequired: 'Deck name it\'s required',
-                questionRequired: 'Deck question it\'s required'
+                questionRequired: 'Deck question it\'s required',
+                title: 'FlashCards'
             },
             titles: {
                 form: 'What\'s your new deck name?'

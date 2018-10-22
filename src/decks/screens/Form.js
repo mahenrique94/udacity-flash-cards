@@ -75,7 +75,7 @@ class Form extends Component {
         const entry = this.state;
         const { decks, navigation } = this.props;
 
-        if (!entry.text) {
+        if (entry.text.trim() === '') {
             Alert.alert(i18n.t('notifications.nameRequired'))
         } else {
             if (decks[entry.text]) {
@@ -89,7 +89,7 @@ class Form extends Component {
                 Alert.alert(
                     'Done',
                     i18n.t('notifications.api.deck.saved'),
-                    [ { text: i18n.t('buttons.ok'), onPress: () => navigation.navigate('List', { title: entry.text, questions: [] }) } ]
+                    [ { text: i18n.t('buttons.ok'), onPress: () => navigation.navigate('Details', { title: entry.text, questions: [] }) } ]
                 )
 
                 this.setState({ text: '' })

@@ -85,12 +85,12 @@ class Question extends Component {
         const { questions, title } = navigation.state.params
         const params = { title, questions, question, answer }
 
-        if (question === '') {
+        if (question.trim() === '') {
             Alert.alert('Important', i18n.t('notifications.questionRequired'))
             return
         }
 
-        if (answer === '') {
+        if (answer.trim() === '') {
             Alert.alert('Important', i18n.t('notifications.answerRequired'))
             return
         }

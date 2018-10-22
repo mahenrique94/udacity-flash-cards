@@ -14,9 +14,7 @@
     },
     "devDependencies": {
         "eslint": "^5.7.0",
-        "husky": "^1.1.2",
-        "react-native-scripts": "1.14.0",
-        "react-test-renderer": "16.3.1"
+        "react-native-scripts": "1.14.0"
     },
     "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
     "name": "flash-cards",
@@ -25,7 +23,6 @@
         "ios": "react-native-scripts ios",
         "lint": "eslint .",
         "lint:fix": "eslint . --fix",
-        "precommit": "yarn lint",
         "start": "react-native-scripts start"
     },
     "version": "0.1.0"
